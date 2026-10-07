@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Features of Digital Devices · IGCSE ICT</title>
+  <meta name="description" content="Interactive lab explaining the features of digital devices: portability, performance, storage, user interfaces, connectivity, media support, energy consumption, expansion capability and security. Pearson Edexcel International GCSE ICT, Unit 1.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="top-inner">
+      <div class="brand">
+        <span class="logo" role="img" aria-label="British School Alzira · Xàtiva · Gandia"></span>
+        <div class="titles">
+          <p class="kicker">IGCSE ICT · Unit 1 · Digital devices</p>
+          <h1>Features of Digital Devices</h1>
+        </div>
+      </div>
+      <div class="top-actions">
+        <button class="chip-btn" id="btnProjector" aria-pressed="false" title="Bigger text for the classroom projector (P)">Projector mode</button>
+        <button class="chip-btn" id="btnFull" title="Full screen (F)">Full screen</button>
+      </div>
+    </div>
+    <nav class="tabs" id="tabs" aria-label="Scenes"></nav>
+  </header>
+
+  <main>
+    <section class="lab" id="lab">
+      <div class="card stage-card">
+        <div class="stage-head">
+          <span class="scene-ic" id="sceneIc"></span>
+          <h2 id="sceneTitle"></h2>
+          <span class="try" id="tryBadge" hidden>Interactive · try it</span>
+        </div>
+        <div class="stage" id="stage"></div>
+      </div>
+
+      <aside class="side">
+        <div class="card narration" id="narration" aria-live="polite">
+          <p class="step-count" id="stepCount"></p>
+          <h3 id="stepTitle"></h3>
+          <div class="step-text" id="stepText"></div>
+          <p class="tip" id="stepTip" hidden></p>
+        </div>
+        <div class="card vocab" id="vocab" hidden>
+          <h4>Subject vocabulary</h4>
+          <dl id="vocabList"></dl>
+        </div>
+      </aside>
+    </section>
+
+    <section class="page" id="page" hidden></section>
+  </main>
+
+  <footer class="controls" id="controls">
+    <button class="btn ghost" id="btnReset" title="Restart this scene (R)">↺ <span>Restart</span></button>
+    <button class="btn ghost" id="btnBack" title="Back (←)">◀ <span>Back</span></button>
+    <button class="btn primary" id="btnPlay" title="Play / pause (Space)">▶ Play</button>
+    <button class="btn ghost" id="btnNext" title="Next (→)"><span>Next</span> ▶</button>
+    <label class="speed">Speed
+      <select id="speed">
+        <option value="0.5">0.5×</option>
+        <option value="1" selected>1×</option>
+        <option value="1.5">1.5×</option>
+        <option value="2">2×</option>
+      </select>
+    </label>
+    <div class="progress" aria-hidden="true"><div id="progressFill"></div></div>
+  </footer>
+
+  <script src="js/core.js"></script>
+  <script src="js/scenes/intro.js"></script>
+  <script src="js/scenes/portability.js"></script>
+  <script src="js/scenes/performance.js"></script>
+  <script src="js/scenes/storage.js"></script>
+  <script src="js/scenes/interfaces.js"></script>
+  <script src="js/scenes/connectivity.js"></script>
+  <script src="js/scenes/media.js"></script>
+  <script src="js/scenes/energy.js"></script>
+  <script src="js/scenes/expansion.js"></script>
+  <script src="js/scenes/security.js"></script>
+  <script src="js/scenes/compare.js"></script>
+  <script src="js/scenes/terms.js"></script>
+  <script src="js/scenes/quiz.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
