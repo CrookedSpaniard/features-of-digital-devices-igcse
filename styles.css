@@ -319,6 +319,12 @@ main { max-width: 1360px; margin: 0 auto; padding: 1rem 1.25rem 1.5rem; }
 .pdev-desktop .dev { width: 7rem; }
 .pdev-tv .dev { width: 100%; max-width: 9rem; }
 .pdev strong { font-size: .92rem; }
+.stage { container: stage / inline-size; }
+@container stage (max-width: 40rem) {
+  .port { grid-template-columns: minmax(0, 1fr) 10rem; }
+  .pdev { padding-inline: .3rem; }
+  .pdev strong { font-size: .82rem; }
+}
 .pdev-m, .pdev .meter { display: none; }
 .port.show-m .pdev-m { display: flex; flex-direction: column; font-size: .8rem; color: var(--muted); }
 .port.show-m .pdev .meter { display: grid; width: 100%; grid-template-columns: 1fr; gap: .15rem; text-align: left; }
